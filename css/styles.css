@@ -1,0 +1,141 @@
+/* Design for   mobile: 375px
+                desktop: 1440px */
+
+:root {
+    /* Note: CSS variables do not currently work in media queries */
+    --design-change-width: 641px;
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+    /* primary colors */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --darker-cyan: hsl(157, 47%, 19%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* neutral colors */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    --p-font-size: 14px;
+    /* --p-font-size: 12.7px; */
+}
+
+p {
+    font-size: var(--p-font-size);
+    color: var(--dark-grayish-blue);
+    margin: 0;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: var(--very-dark-blue);
+    font-family: "Fraunces", serif;
+    margin: 12px auto 14px auto;
+    line-height: 1;
+}
+
+h2 {
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: var(--p-font-size);
+    margin: 0;
+    letter-spacing: 4.5px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*****************************************************************************/
+
+.card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 500px; */
+    max-width: 375px;
+    margin: 20px 8px;
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.details-container {
+    margin: 24px;
+}
+
+.description {
+    line-height: 1.8;
+}
+
+.price-container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.new-price {
+    color: var(--dark-cyan);
+    margin-right: 24px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.btn-hldr {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    background: var(--dark-cyan);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+
+    /* I added this final stuff. The rest was generated from https://css3buttongenerator.com/ */
+    width: 100%;
+    font-size: var(--p-font-size);
+}
+
+.btn:hover {
+    background: var(--darker-cyan);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        /* flex-direction: row; */
+    }
+}
