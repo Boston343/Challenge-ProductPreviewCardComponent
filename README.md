@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Posted Solution URL]()
+- Solution URL: [Posted Solution URL](https://www.frontendmentor.io/solutions/product-preview-card-component-flexbox-mobile-first-design-J60GbfzpVo)
 - Live Site URL: [https://boston343.github.io/Challenge-ProductPreviewCardComponent/](https://boston343.github.io/Challenge-ProductPreviewCardComponent/)
 
 ## My process
